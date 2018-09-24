@@ -1,20 +1,53 @@
 <ion-header>
-  <ion-navbar color="danger">
+  <ion-navbar color="orangeFour">
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Pizzeria</ion-title>
+    <ion-title>Top Gun Pizza</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h3></h3>
+<ion-content class="orangeOne">
 
+  <ion-card *ngIf= "dish; else loading">
+
+    <img src= "{{ dbURL + dish.image}}">
+		<ion-card-content>
+			<ion-card-title>
+				{{dish.name | uppercase}}
+</ion-card-title>
+<p>
+	{{dish.description}}
+</p>
+		</ion-card-content>
+  </ion-card>
+
+  <ion-card *ngIf= "promotion; else loading">
+
+      <img src= "{{ dbURL + promotion.image}}">
+      <ion-card-content>
+        <ion-card-title>
+          {{promotion.name | uppercase}}
+  </ion-card-title>
   <p>
-  
+    {{promotion.description}}
   </p>
+      </ion-card-content>
+    </ion-card>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
-</ion-content>
+    <ion-card *ngIf= "leader; else loading">
+
+        <img src= "{{ dbURL + leader.image}}">
+        <ion-card-content>
+          <ion-card-title>
+            {{leader.name | uppercase}}
+    </ion-card-title>
+    <p>
+      {{leader.description}}
+    </p>
+        </ion-card-content>
+      </ion-card>
+  </ion-content>
+
 
 

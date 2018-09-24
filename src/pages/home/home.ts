@@ -16,8 +16,8 @@ export class HomePage implements OnInit{
 
   constructor(
     public navCtrl: NavController,
-    private dishService: DishProvider
-//    @Inject('DbURL') private dbURL
+    private dishService: DishProvider,
+    @Inject('DbURL') private dbURL
   ){}
 
   ngOnInit(){

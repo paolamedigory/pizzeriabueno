@@ -2,11 +2,11 @@
 import { Component, OnInit,Inject } from '@angular/core';
 import { NavController} from 'ionic-angular';
 import { DishProvider} from '../../providers/dish/dish';
-import {Dish} from '../../share/dish';
-import {LeaderProvider} from '../../providers/leader/leader';
-import {Leader} from '../../share/leader';
-import {PromotionProvider} from '../../providers/promotion/promotion';
-import {Promotion} from '../../share/promotion';
+import { Dish} from '../../share/dish';
+import { LeaderProvider} from '../../providers/leader/leader';
+import { Leader} from '../../share/leader';
+import { PromotionProvider} from '../../providers/promotion/promotion';
+import { Promotion} from '../../share/promotion';
 
 
 

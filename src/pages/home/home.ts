@@ -10,6 +10,7 @@ import { Promotion} from '../../share/promotion';
 
 
 
+
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -26,6 +27,7 @@ export class HomePage implements OnInit{
     private leaderService: LeaderProvider,
     private dishService: DishProvider,
     private promotionService: PromotionProvider,
+    
 
     @Inject('DbURL') private dbURL
   ){}

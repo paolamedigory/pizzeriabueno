@@ -14,5 +14,42 @@
 
 
 <ion-content padding>
+   <ion-card *ngIf= "dish">
 
+        <img src= "{{ dbURL + dish.image}}">
+        <ion-card-content>
+          <ion-card-title>
+            {{dish.name | uppercase}}
+    </ion-card-title>
+    <p>
+      {{dish.description}}
+    </p>
+    </ion-card-content>
+     <ion-row>
+      <button ion-button icon-left small clear color="moradito">
+       <ion-icon name="star"></ion-icon>
+       <div>{{averageRating}} Stars </div>
+      </button>
+    </ion-col>
+
+    <ion-col>
+    <button ion-button icon-left small clear color ="moradito">
+       <ion-icon name-"text"></ion-icon>
+       <div>{{numberComments}} Comments</div>
+     </button>
+    </ion-col>
+   </ion-row>
+
+   <ion-list>
+     <ion-item *ngFor= "let comment for dish.comments">
+       <p>{{comment.comment}}</p>
+       <p>{{commet.rating}} Stars</p>
+       <p>
+         <span>
+           {{cooment.author}} - {{comment.date | date}}
+         </span>
+       </p>
+     </ion-item>
+     </ion-list>
+      </ion-card>
 </ion-content>

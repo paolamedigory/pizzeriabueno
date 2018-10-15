@@ -24,6 +24,7 @@ export class DishdetailPage {
   numComments : number;
   averageRating: number;
 
+
   constructor(
     public navCtrl: NavController, 
     public navParams: NavParams,

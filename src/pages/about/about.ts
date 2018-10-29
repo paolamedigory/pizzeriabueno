@@ -3,9 +3,6 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { LeaderProvider} from '../../providers/leader/leader';
 import { Leader} from '../../share/leader';
 
-/**import la inter de leaders y su provider // agregar variable que
- reciba arregl de leaders, hace run metodo que con la funcion de get leaders que tengo en provides
- le asig la respuesta y en html iterar esa variable */
 
 /**
  * Generated class for the AboutPage page.

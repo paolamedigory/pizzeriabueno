@@ -3,7 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Dish } from '../../share/dish';
 import { Comment } from '../../share/comment';
 import { inject } from '../../../node_modules/@angular/core/src/render3';
-import { favorite, FavoriteProvider } from '../../providers/favorite/favorite';
+import { FavoriteProvider } from '../../providers/favorite/favorite';
 
 
 /**

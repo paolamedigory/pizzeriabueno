@@ -9,16 +9,18 @@ import { AboutPage } from '../pages/about/about';
 import { MenuPage } from '../pages/menu/menu';
 import { ContactPage } from '../pages/contact/contact';
 import {DishdetailPage} from '../pages/dishdetail/dishdetail';
+import { FavoritesPage} from '../pages/favorites/favorites';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { DishProvider } from '../providers/dish/dish';
 import { LeaderProvider } from '../providers/leader/leader';
 import { PromotionProvider } from '../providers/promotion/promotion';
+import { FavoriteProvider} from '../providers/favorite/favorite';
 import { HttpClientModule } from '@angular/common/http';
 
 import {dbURL} from '../share/dburl';
-import { FavoriteProvider } from '../providers/favorite/favorite';
+
 
 @NgModule({
   
@@ -30,6 +32,7 @@ import { FavoriteProvider } from '../providers/favorite/favorite';
     MenuPage,
     ContactPage,
     DishdetailPage,
+    FavoritesPage
   ],
   imports: [
     BrowserModule,
@@ -45,6 +48,7 @@ import { FavoriteProvider } from '../providers/favorite/favorite';
     MenuPage,
     ContactPage,
     DishdetailPage,
+    FavoritesPage,
   ],
   providers: [
     StatusBar,
